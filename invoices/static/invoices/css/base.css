@@ -1,0 +1,10 @@
+body {
+  background-image: linear-gradient(30deg, rgba(99, 148, 156, 0.7) 1%, rgba(171, 224, 232, 0.5) 100%), linear-gradient(-30deg, #494d71 0%, rgba(217, 230, 185, 0.5) 80%);
+  background-image: -Webkit-linear-gradient(30deg, rgba(99, 148, 156, 0.7) 1%, rgba(171, 224, 232, 0.5) 100%), -Webkit-linear-gradient(-30deg, #494d71 0%, rgba(217, 230, 185, 0.5) 80%);
+  background-image: -moz-linear-gradient(30deg, rgba(99, 148, 156, 0.7) 1%, rgba(171, 224, 232, 0.5) 100%), -moz-linear-gradient(-30deg, #494d71 0%, rgba(217, 230, 185, 0.5) 80%);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+}

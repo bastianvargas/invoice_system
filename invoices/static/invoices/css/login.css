@@ -1,0 +1,240 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css";
+@import "//fonts.googleapis.com/css?family=Roboto:400,700";
+
+html {
+  height: 100%;
+}
+
+.wrapper {
+  position: absolute;
+  left: 50%;
+  margin-left: -12.5em;
+  width: 25em;
+  height: 100%;
+}
+.wrapper .login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -15em;
+  margin-left: -12.5em;
+  width: 25em;
+  height: 24em;
+  background-color: white;
+  -moz-border-radius-topright: 0.25rem;
+  -webkit-border-top-right-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  -moz-border-radius-topleft: 0.25rem;
+  -webkit-border-top-left-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+  -moz-box-shadow: 0.2em 0em 0.6em 0.1em rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0.2em 0em 0.6em 0.1em rgba(0, 0, 0, 0.5);
+  box-shadow: 0.2em 0em 0.6em 0.1em rgba(0, 0, 0, 0.5);
+}
+.wrapper .login .appTitle {
+  color: #EEEEEE;
+  font-size: 2em;
+  padding-top: 1rem;
+  height: 4rem;
+  background-color: #364D5C;
+  text-align: center;
+  border: none;
+  -moz-border-radius-topright: 0.25rem;
+  -webkit-border-top-right-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  -moz-border-radius-topleft: 0.25rem;
+  -webkit-border-top-left-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+}
+.wrapper .login .arrow-down {
+  position: relative;
+  left: 50%;
+  margin-left: -1em;
+  width: 0;
+  height: 0;
+  border-left: 1em solid transparent;
+  border-right: 1em solid transparent;
+  border-top: 1em solid #364D5C;
+}
+.wrapper .login span {
+  float: left;
+  margin-left: 2rem;
+  width: 3rem;
+  height: 3.5rem;
+  text-align: center;
+  color: #FFF;
+  background-color: #364D5C;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+.wrapper .login form {
+  width: 25em;
+  padding-top: 1.5em;
+}
+.wrapper .login form fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.wrapper .login form fieldset input {
+  position: relative;
+  float: left;
+  margin-bottom: 1.5em;
+  padding-left: .5em;
+  background-color: #EFEFEF;
+  outline: 0;
+  width: 18rem;
+  height: 3.5rem;
+  font-size: 1em;
+  outline: 0;
+  box-sizing: border-box;
+  border: 0.1em solid #364D5C;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.wrapper .login form fieldset input:focus {
+  background-color: white;
+}
+.wrapper .login #btnLogin {
+  position: relative;
+  left: 50%;
+  margin-left: -10.5rem;
+  width: 21rem;
+  height: 3rem;
+  background-color: #42C474;
+  border: none;
+  color: #FFF;
+  font-size: 1.5em;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -moz-border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+}
+.wrapper .login #btnLogin:hover {
+  background-color: #4fc87e;
+}
+
+a#forgot {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-decoration: none;
+  color: #000;
+}
+
+#externalAuth {
+  position: relative;
+  display: block;
+  top: 50%;
+  margin-top: 9em;
+}
+
+#or {
+  display: block;
+  clear: both;
+  margin-top: .5em;
+  width: 100%;
+  height: 1em;
+  color: #FFF;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  padding-top: .5em;
+}
+
+i[class*="fa-"] {
+  font-family: 'FontAwesome', sans-serif;
+  padding-top: 1.25rem;
+}
+
+span[class*="fa-"] {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+span[class*="fa-google"],
+span[class*="fa-facebook"] {
+  position: relative;
+  display: block;
+  float: left;
+  margin-top: 1rem;
+  padding-top: .5rem;
+  height: 2.5rem;
+  width: 49%;
+  cursor: pointer;
+  font-size: 1.5em;
+  text-align: center;
+  color: #FFF;
+  -moz-border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -moz-box-shadow: 0.2em 0em 0.2em -0.1em rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0.2em 0em 0.2em -0.1em rgba(0, 0, 0, 0.3);
+  box-shadow: 0.2em 0em 0.2em -0.1em rgba(0, 0, 0, 0.3);
+}
+
+span[class*="fa-google"] {
+  background-color: #d34836;
+  margin-right: 2%;
+}
+span[class*="fa-google"]:hover {
+  background-color: #d65544;
+}
+
+span[class*="fa-facebook"] {
+  background-color: #3b5998;
+}
+span[class*="fa-facebook"]:hover {
+  background-color: #4060a4;
+}
+
+button#createAccount {
+  position: relative;
+  top: 50%;
+  width: 100%;
+  height: 4.5rem;
+  z-index: 1;
+  color: #FFF;
+  background-color: #364D5C;
+  font-weight: bold;
+  border: none;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -moz-border-radius-bottomright: 0.25rem;
+  -webkit-border-bottom-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  -moz-border-radius-bottomleft: 0.25rem;
+  -webkit-border-bottom-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  box-shadow: 0.4em 0.1em 0.5em -0.1em rgba(0, 0, 0, 0.5);
+}
+button#createAccount:hover {
+  background-color: #3c5667;
+}
+
+/* CREDITS */
+.credits {
+  display: block;
+  padding-top: 5em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.credits a {
+  color: #364D5C;
+  text-decoration: none;
+}

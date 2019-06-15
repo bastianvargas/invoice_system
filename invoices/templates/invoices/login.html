@@ -1,0 +1,34 @@
+{% extends 'invoices/base.html' %}
+
+{% block content %}
+<div class='wrapper'>
+<div class='login'>
+  <div class='appTitle'>
+    ExampleService
+  </div>
+  <div class='arrow-down'></div>
+  <form formaction='login'>
+    <fieldset>
+      <span>
+        <i class='fa fa-user'></i>
+      </span>
+      <input placeholder='Username'>
+    </fieldset>
+    <fieldset>
+      <span>
+        <i class='fa fa-lock'></i>
+      </span>
+      <input placeholder='Password' type='password'>
+    </fieldset>
+  </form>
+  <button id='btnLogin' type='submit'>Login</button>
+  <a href='#' id='forgot'>I forgot my password</a>
+</div>
+<div id='externalAuth'>
+  <button id='createAccount' type='button'>No account? Create one now!</button>
+
+
+</div>
+</div>
+
+{% endblock content %}

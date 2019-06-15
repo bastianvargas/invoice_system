@@ -1,0 +1,40 @@
+
+{% extends 'invoices/base.html' %}
+
+{% block content %}
+<h2>Lista Facturas</h2>
+<table>
+  <thead>
+    <tr>
+      <th>fecha emision</th>
+      <th>tipo documento</th>
+      <th>folio</th>
+      <th>rut emisor</th>
+      <th>empresa emisor</th>
+      <th>rut receptor</th>
+      <th>empresa receptor</th>
+      <th>detalle</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {% for inv in invoices %}
+
+    <tr>
+      <td>{{ inv.date }}</td>
+      <td>{{ inv.type }}</td>
+      <td>{{ inv.folio }}</td>
+      <td>{{ inv.issuing_rut }}</td>
+      <td>{{ inv.issuing_name }}</td>
+      <td>{{ inv.receiver_rut }}</td>
+      <td>{{ inv.receiver_name }}</td>
+      <td>{{ inv.detail }}</td>
+    </tr>
+
+    {% endfor %}
+
+  </tbody>
+</table>
+
+
+{% endblock content %}

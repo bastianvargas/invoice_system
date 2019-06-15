@@ -15,7 +15,7 @@ class Invoice(models.Model):
     issuing_name = models.CharField(max_length=30)
     receiver_rut = models.CharField(max_length=15)
     receiver_name = models.CharField(max_length=30)
-    detail = models.TextField(default='{}')
+    detail = models.TextField()
 
     def __str__(self):
-        return str(self.date)+ " - " +str(self.detail)
+        return str(self.date)+ " - " +str(self.type)+ " - " +str(self.folio)+ " - " +str(self.issuing_rut)+ " - " +str(self.issuing_name)+ " - " +str(self.receiver_rut)+ " - " +str(self.receiver_name)+ " - " +str(self.detail)

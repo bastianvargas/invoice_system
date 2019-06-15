@@ -1,0 +1,30 @@
+
+{% extends 'invoices/base.html' %}
+
+{% block content %}
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+
+
+
+  <form action="" enctype="multipart/form-data" method="post">
+    {% csrf_token %}
+
+    <div class="form-group">
+      <label class="label">
+        <i class="material-icons">attach_file</i>
+        <span class="title">Add File</span>
+        <input type="file" name="xmlfile">
+
+        <input type="submit" value="upload xml file">
+      </label>
+    </div>
+
+  </form>
+
+  <h3>{{ mensaje }}</h3>
+
+
+
+{% endblock content %}
